@@ -1,6 +1,6 @@
 {
-    "js": ["widget.js", "node_modules/i18next/i18next.min.js", "jquery.magnific-popup.min.js"],
+    "js": ["widget.js", "node_modules/i18next/i18next.min.js", "jquery.magnific-popup.min.js", "slick.min.js"],
     "callback": ["hamis"],
-    "css": ["stylesheet.css","magnific-popup.css"],
+    "css": ["stylesheet.css","magnific-popup.css", "slick.css", "slick-theme.css"],
     "templates": ["template.html"]
 }
