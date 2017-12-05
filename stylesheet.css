@@ -1,0 +1,96 @@
+/*
+ * The whole widget
+ */
+.concept-widget {
+  border-top: 2px solid #394554;
+  background-color: #fff;
+}
+
+.concept-widget a > img {
+  height: auto;
+  width: 99%;
+}
+
+.concept-widget > a {
+  display: none;
+}
+
+.concept-widget .glyphicon-chevron-left, .concept-widget .glyphicon-chevron-right {
+  color: #83cfc8;
+  cursor: pointer;
+  font-size: 24px;
+  height: 24px;
+  position: absolute;
+  /*opacity: 0.6;*/
+  top: 50%;
+  transform: translate(0px, -50%);
+}
+
+.concept-widget .glyphicon-chevron-left {
+  left: 2px;
+  z-index: 1041;
+}
+
+.concept-widget .glyphicon-chevron-right {
+  right: 2px;
+}
+
+.concept-widget > a:first-child {
+  display: inline;
+}
+
+.concept-widget .slick-dots {
+  bottom: 2px;
+}
+
+.concept-widget .slick-dots > li {
+  margin: 0 2px;
+}
+
+.concept-widget .slick-dots > li > button::before {
+  color: #83cfc8;
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+.concept-widget .slick-dots > li.slick-active > button::before  {
+  color: #83cfc8;
+  opacity: 1;
+}
+
+.panel-heading > a.versal {
+  float: right;
+}
+
+.panel-heading > .versal > .glyphicon {
+  color: #83cfc8;
+  margin-top:5px;
+}
+  
+.panel-heading .glyphicon-info-sign {
+  color: #83cfc8;
+  font-size: 18px;
+}
+
+.panel-heading .help {
+  border-bottom: 2px dotted #394554;
+}
+
+.twitter-typeahead > .clear-search {
+    z-index: 1040;
+}
+
+.mfp-iframe-holder .mfp-content {
+  max-height: 99% !important;
+  max-width: 99% !important;
+}
+
+.mfp-content > .mfp-figure::after, .mfp-iframe-scaler > .mfp-iframe {
+  background: #fff none repeat scroll 0 0;
+}
+
+.concept-widget > .panel {
+  border-radius: 0;
+  border: 0;
+  box-shadow: none;
+}
