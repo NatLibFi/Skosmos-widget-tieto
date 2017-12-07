@@ -29,484 +29,484 @@ TIETO = {
         },
         graphsPerUri: { // SHITZU
             "http://urn.fi/URN:NBN:fi:au:tts:t140":[
-                "http://kaaviot.finto.fi/tts/asiarekisteri.svg"
+                "http://kaaviot.finto.fi/tt/asiarekisteri.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t110":[
-                "http://kaaviot.finto.fi/tts/lukutaidot.svg"
+                "http://kaaviot.finto.fi/tt/lukutaidot.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t30":[
-                "http://kaaviot.finto.fi/tts/rekisterit.svg"
+                "http://kaaviot.finto.fi/tt/rekisterit.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t31":[
-                "http://kaaviot.finto.fi/tts/tiedon-muotoja.svg",
-                "http://kaaviot.finto.fi/tts/rakenteinen-data.svg",
-                "http://kaaviot.finto.fi/tts/avoin-data-ja-omadata.svg",
-                "http://kaaviot.finto.fi/tts/raakadata-ja-massadata.svg"
+                "http://kaaviot.finto.fi/tt/tiedon-muotoja.svg",
+                "http://kaaviot.finto.fi/tt/rakenteinen-data.svg",
+                "http://kaaviot.finto.fi/tt/avoin-data-ja-omadata.svg",
+                "http://kaaviot.finto.fi/tt/raakadata-ja-massadata.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t32":[
-                "http://kaaviot.finto.fi/tts/nykytilan-kuvaaminen.svg"
+                "http://kaaviot.finto.fi/tt/nykytilan-kuvaaminen.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t33":[
-                "http://kaaviot.finto.fi/tts/lukutaidot.svg"
+                "http://kaaviot.finto.fi/tt/lukutaidot.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t34":[
-                "http://kaaviot.finto.fi/tts/tietojohtaminen.svg"
+                "http://kaaviot.finto.fi/tt/tietojohtaminen.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t35":[
-                "http://kaaviot.finto.fi/tts/tiedon-sailytys-ja-havittaminen.svg"
+                "http://kaaviot.finto.fi/tt/tiedon-sailytys-ja-havittaminen.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t36":[
-                "http://kaaviot.finto.fi/tts/tiedon-tyyppeja.svg"
+                "http://kaaviot.finto.fi/tt/tiedon-tyyppeja.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t37":[
-                "http://kaaviot.finto.fi/tts/tiedon-jalostaminen.svg",
-                "http://kaaviot.finto.fi/tts/aineeton-paaoma.svg",
-                "http://kaaviot.finto.fi/tts/sisalto-kaavio.svg"
+                "http://kaaviot.finto.fi/tt/tiedon-jalostaminen.svg",
+                "http://kaaviot.finto.fi/tt/aineeton-paaoma.svg",
+                "http://kaaviot.finto.fi/tt/sisalto-kaavio.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t38":[
-                "http://kaaviot.finto.fi/tts/sisalto-kaavio.svg",
-                "http://kaaviot.finto.fi/tts/lukutaidot.svg"
+                "http://kaaviot.finto.fi/tt/sisalto-kaavio.svg",
+                "http://kaaviot.finto.fi/tt/lukutaidot.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t39":[
-                "http://kaaviot.finto.fi/tts/tietoaineistot.svg"
+                "http://kaaviot.finto.fi/tt/tietoaineistot.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t85":[
-                "http://kaaviot.finto.fi/tts/tietoilmioita.svg"
+                "http://kaaviot.finto.fi/tt/tietoilmioita.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t84":[
-                "http://kaaviot.finto.fi/tts/rakenteinen-data.svg"
+                "http://kaaviot.finto.fi/tt/rakenteinen-data.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t87":[
-                "http://kaaviot.finto.fi/tts/tiedon-jalostaminen.svg"
+                "http://kaaviot.finto.fi/tt/tiedon-jalostaminen.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t86":[
-                "http://kaaviot.finto.fi/tts/sanasto.svg",
-                "http://kaaviot.finto.fi/tts/sanastot-tyypin-ja-laatimistavan-mukaan.svg",
-                "http://kaaviot.finto.fi/tts/sanastot-kayttotarkoituksen-mukaan.svg"
+                "http://kaaviot.finto.fi/tt/sanasto.svg",
+                "http://kaaviot.finto.fi/tt/sanastot-tyypin-ja-laatimistavan-mukaan.svg",
+                "http://kaaviot.finto.fi/tt/sanastot-kayttotarkoituksen-mukaan.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t81":[
-                "http://kaaviot.finto.fi/tts/luokitus-ja-koodisto.svg"
+                "http://kaaviot.finto.fi/tt/luokitus-ja-koodisto.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t80":[
-                "http://kaaviot.finto.fi/tts/tietoturvallisuus.svg"
+                "http://kaaviot.finto.fi/tt/tietoturvallisuus.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t83":[
-                "http://kaaviot.finto.fi/tts/sanastot-kayttotarkoituksen-mukaan.svg"
+                "http://kaaviot.finto.fi/tt/sanastot-kayttotarkoituksen-mukaan.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t82":[
-                "http://kaaviot.finto.fi/tts/tietoaineistot.svg",
-                "http://kaaviot.finto.fi/tts/arkistointi.svg",
-                "http://kaaviot.finto.fi/tts/asiakirjahallinta.svg",
-                "http://kaaviot.finto.fi/tts/rakenteinen-data.svg",
-                "http://kaaviot.finto.fi/tts/tiedonhankinta.svg"
+                "http://kaaviot.finto.fi/tt/tietoaineistot.svg",
+                "http://kaaviot.finto.fi/tt/arkistointi.svg",
+                "http://kaaviot.finto.fi/tt/asiakirjahallinta.svg",
+                "http://kaaviot.finto.fi/tt/rakenteinen-data.svg",
+                "http://kaaviot.finto.fi/tt/tiedonhankinta.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t89":[
-                "http://kaaviot.finto.fi/tts/aineeton-paaoma.svg"
+                "http://kaaviot.finto.fi/tt/aineeton-paaoma.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t88":[
-                "http://kaaviot.finto.fi/tts/tiedon-tyyppeja.svg"
+                "http://kaaviot.finto.fi/tt/tiedon-tyyppeja.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t49":[
-                "http://kaaviot.finto.fi/tts/arkistointi.svg"
+                "http://kaaviot.finto.fi/tt/arkistointi.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t18":[
-                "http://kaaviot.finto.fi/tts/immateriaalioikeus.svg",
-                "http://kaaviot.finto.fi/tts/tieto-paasyn-ja-kayton-ehtojen-seka-suojauksen-mukaan.svg",
-                "http://kaaviot.finto.fi/tts/avoin-data-ja-omadata.svg"
+                "http://kaaviot.finto.fi/tt/immateriaalioikeus.svg",
+                "http://kaaviot.finto.fi/tt/tieto-paasyn-ja-kayton-ehtojen-seka-suojauksen-mukaan.svg",
+                "http://kaaviot.finto.fi/tt/avoin-data-ja-omadata.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t19":[
-                "http://kaaviot.finto.fi/tts/tiedon-sailytys-ja-havittaminen.svg"
+                "http://kaaviot.finto.fi/tt/tiedon-sailytys-ja-havittaminen.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t106":[
-                "http://kaaviot.finto.fi/tts/tietojohtaminen.svg"
+                "http://kaaviot.finto.fi/tt/tietojohtaminen.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t12":[
-                "http://kaaviot.finto.fi/tts/tietotyo.svg"
+                "http://kaaviot.finto.fi/tt/tietotyo.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t13":[
-                "http://kaaviot.finto.fi/tts/nykytilan-kuvaaminen.svg"
+                "http://kaaviot.finto.fi/tt/nykytilan-kuvaaminen.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t10":[
-                "http://kaaviot.finto.fi/tts/arkistointi.svg"
+                "http://kaaviot.finto.fi/tt/arkistointi.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t11":[
-                "http://kaaviot.finto.fi/tts/sanastot-kayttotarkoituksen-mukaan.svg"
+                "http://kaaviot.finto.fi/tt/sanastot-kayttotarkoituksen-mukaan.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t16":[
-                "http://kaaviot.finto.fi/tts/nykytilan-kuvaaminen.svg"
+                "http://kaaviot.finto.fi/tt/nykytilan-kuvaaminen.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t17":[
-                "http://kaaviot.finto.fi/tts/asiarekisteri.svg"
+                "http://kaaviot.finto.fi/tt/asiarekisteri.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t14":[
-                "http://kaaviot.finto.fi/tts/yhteentoimivuus.svg"
+                "http://kaaviot.finto.fi/tt/yhteentoimivuus.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t15":[
-                "http://kaaviot.finto.fi/tts/sisalto-kaavio.svg",
-                "http://kaaviot.finto.fi/tts/tiedonhallinta.svg"
+                "http://kaaviot.finto.fi/tt/sisalto-kaavio.svg",
+                "http://kaaviot.finto.fi/tt/tiedonhallinta.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t92":[
-                "http://kaaviot.finto.fi/tts/tiedon-tyyppeja.svg"
+                "http://kaaviot.finto.fi/tt/tiedon-tyyppeja.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t93":[
-                "http://kaaviot.finto.fi/tts/sanastot-kayttotarkoituksen-mukaan.svg"
+                "http://kaaviot.finto.fi/tt/sanastot-kayttotarkoituksen-mukaan.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t90":[
-                "http://kaaviot.finto.fi/tts/tietojohtaminen.svg"
+                "http://kaaviot.finto.fi/tt/tietojohtaminen.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t91":[
-                "http://kaaviot.finto.fi/tts/tiedon-muotoja.svg"
+                "http://kaaviot.finto.fi/tt/tiedon-muotoja.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t96":[
-                "http://kaaviot.finto.fi/tts/yhteentoimivuus.svg"
+                "http://kaaviot.finto.fi/tt/yhteentoimivuus.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t97":[
-                "http://kaaviot.finto.fi/tts/yhteentoimivuus.svg"
+                "http://kaaviot.finto.fi/tt/yhteentoimivuus.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t94":[
-                "http://kaaviot.finto.fi/tts/tietoaineistot.svg",
-                "http://kaaviot.finto.fi/tts/asiakirjahallinta.svg"
+                "http://kaaviot.finto.fi/tt/tietoaineistot.svg",
+                "http://kaaviot.finto.fi/tt/asiakirjahallinta.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t95":[
-                "http://kaaviot.finto.fi/tts/tietoturvallisuus.svg",
-                "http://kaaviot.finto.fi/tts/tiedonhallinta.svg",
-                "http://kaaviot.finto.fi/tts/tiedon-sailytys-ja-havittaminen"
+                "http://kaaviot.finto.fi/tt/tietoturvallisuus.svg",
+                "http://kaaviot.finto.fi/tt/tiedonhallinta.svg",
+                "http://kaaviot.finto.fi/tt/tiedon-sailytys-ja-havittaminen"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t98":[
-                "http://kaaviot.finto.fi/tts/rakenteinen-data.svg",
-                "http://kaaviot.finto.fi/tts/tiedonhankinta.svg"
+                "http://kaaviot.finto.fi/tt/rakenteinen-data.svg",
+                "http://kaaviot.finto.fi/tt/tiedonhankinta.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t99":[
-                "http://kaaviot.finto.fi/tts/tiedonhankinta.svg",
-                "http://kaaviot.finto.fi/tts/sanastot-kayttotarkoituksen-mukaan.svg"
+                "http://kaaviot.finto.fi/tt/tiedonhankinta.svg",
+                "http://kaaviot.finto.fi/tt/sanastot-kayttotarkoituksen-mukaan.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t47":[
-                "http://kaaviot.finto.fi/tts/tiedonhallinta.svg",
-                "http://kaaviot.finto.fi/tts/tiedon-sailytys-ja-havittaminen.svg",
-                "http://kaaviot.finto.fi/tts/tietojohtaminen.svg",
-                "http://kaaviot.finto.fi/tts/nykytilan-kuvaaminen.svg"
+                "http://kaaviot.finto.fi/tt/tiedonhallinta.svg",
+                "http://kaaviot.finto.fi/tt/tiedon-sailytys-ja-havittaminen.svg",
+                "http://kaaviot.finto.fi/tt/tietojohtaminen.svg",
+                "http://kaaviot.finto.fi/tt/nykytilan-kuvaaminen.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t69":[
-                "http://kaaviot.finto.fi/tts/sanastot-tyypin-ja-laatimistavan-mukaan.svg"
+                "http://kaaviot.finto.fi/tt/sanastot-tyypin-ja-laatimistavan-mukaan.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t68":[
-                "http://kaaviot.finto.fi/tts/tiedon-tyyppeja.svg"
+                "http://kaaviot.finto.fi/tt/tiedon-tyyppeja.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t67":[
-                "http://kaaviot.finto.fi/tts/tiedon-tyyppeja.svg"
+                "http://kaaviot.finto.fi/tt/tiedon-tyyppeja.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t66":[
-                "http://kaaviot.finto.fi/tts/nykytilan-kuvaaminen.svg"
+                "http://kaaviot.finto.fi/tt/nykytilan-kuvaaminen.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t65":[
-                "http://kaaviot.finto.fi/tts/yhteentoimivuus.svg"
+                "http://kaaviot.finto.fi/tt/yhteentoimivuus.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t108":[
-                "http://kaaviot.finto.fi/tts/tiedon-jalostaminen.svg"
+                "http://kaaviot.finto.fi/tt/tiedon-jalostaminen.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t63":[
-                "http://kaaviot.finto.fi/tts/tiedon-tyyppeja.svg",
-                "http://kaaviot.finto.fi/tts/rekisterit.svg"
+                "http://kaaviot.finto.fi/tt/tiedon-tyyppeja.svg",
+                "http://kaaviot.finto.fi/tt/rekisterit.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t62":[
-                "http://kaaviot.finto.fi/tts/asiakirjahallinta.svg",
-                "http://kaaviot.finto.fi/tts/tiedonhallinta.svg"
+                "http://kaaviot.finto.fi/tt/asiakirjahallinta.svg",
+                "http://kaaviot.finto.fi/tt/tiedonhallinta.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t61":[
-                "http://kaaviot.finto.fi/tts/tiedon-sailytys-ja-havittaminen.svg"
+                "http://kaaviot.finto.fi/tt/tiedon-sailytys-ja-havittaminen.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t60":[
-                "http://kaaviot.finto.fi/tts/tieto-paasyn-ja-kayton-ehtojen-seka-suojauksen-mukaan.svg"
+                "http://kaaviot.finto.fi/tt/tieto-paasyn-ja-kayton-ehtojen-seka-suojauksen-mukaan.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t114":[
-                "http://kaaviot.finto.fi/tts/tietoaineistot.svg",
-                "http://kaaviot.finto.fi/tts/rekisterit.svg",
-                "http://kaaviot.finto.fi/tts/asiarekisteri.svg"
+                "http://kaaviot.finto.fi/tt/tietoaineistot.svg",
+                "http://kaaviot.finto.fi/tt/rekisterit.svg",
+                "http://kaaviot.finto.fi/tt/asiarekisteri.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t115":[
-                "http://kaaviot.finto.fi/tts/tietotyo.svg"
+                "http://kaaviot.finto.fi/tt/tietotyo.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t116":[
-                "http://kaaviot.finto.fi/tts/avoin-data-ja-omadata.svg"
+                "http://kaaviot.finto.fi/tt/avoin-data-ja-omadata.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t117":[
-                "http://kaaviot.finto.fi/tts/tiedon-jalostaminen.svg",
-                "http://kaaviot.finto.fi/tts/tiedon-muotoja.svg",
-                "http://kaaviot.finto.fi/tts/tiedon-tyyppeja.svg",
-                "http://kaaviot.finto.fi/tts/tieto-paasyn-ja-kayton-ehtojen-seka-suojauksen-mukaan.svg",
-                "http://kaaviot.finto.fi/tts/tietoilmioita.svg",
-                "http://kaaviot.finto.fi/tts/tietoaineistot.svg",
-                "http://kaaviot.finto.fi/tts/sanasto.svg"
+                "http://kaaviot.finto.fi/tt/tiedon-jalostaminen.svg",
+                "http://kaaviot.finto.fi/tt/tiedon-muotoja.svg",
+                "http://kaaviot.finto.fi/tt/tiedon-tyyppeja.svg",
+                "http://kaaviot.finto.fi/tt/tieto-paasyn-ja-kayton-ehtojen-seka-suojauksen-mukaan.svg",
+                "http://kaaviot.finto.fi/tt/tietoilmioita.svg",
+                "http://kaaviot.finto.fi/tt/tietoaineistot.svg",
+                "http://kaaviot.finto.fi/tt/sanasto.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t78":[
-                "http://kaaviot.finto.fi/tts/terminologian-kasitteita.svg",
-                "http://kaaviot.finto.fi/tts/sanastot-tyypin-ja-laatimistavan-mukaan.svg"
+                "http://kaaviot.finto.fi/tt/terminologian-kasitteita.svg",
+                "http://kaaviot.finto.fi/tt/sanastot-tyypin-ja-laatimistavan-mukaan.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t79":[
-                "http://kaaviot.finto.fi/tts/yhteentoimivuus.svg"
+                "http://kaaviot.finto.fi/tt/yhteentoimivuus.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t112":[
-                "http://kaaviot.finto.fi/tts/sanastot-tyypin-ja-laatimistavan-mukaan.svg"
+                "http://kaaviot.finto.fi/tt/sanastot-tyypin-ja-laatimistavan-mukaan.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t113":[
-                "http://kaaviot.finto.fi/tts/sanastot-kayttotarkoituksen-mukaan.svg"
+                "http://kaaviot.finto.fi/tt/sanastot-kayttotarkoituksen-mukaan.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t74":[
-                "http://kaaviot.finto.fi/tts/immateriaalioikeus.svg"
+                "http://kaaviot.finto.fi/tt/immateriaalioikeus.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t75":[
-                "http://kaaviot.finto.fi/tts/tietoilmioita.svg"
+                "http://kaaviot.finto.fi/tt/tietoilmioita.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t76":[
-                "http://kaaviot.finto.fi/tts/aineeton-paaoma.svg"
+                "http://kaaviot.finto.fi/tt/aineeton-paaoma.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t77":[
-                "http://kaaviot.finto.fi/tts/asiakirjahallinta.svg",
-                "http://kaaviot.finto.fi/tts/arkistointi.svg",
-                "http://kaaviot.finto.fi/tts/asiarekisteri.svg"
+                "http://kaaviot.finto.fi/tt/asiakirjahallinta.svg",
+                "http://kaaviot.finto.fi/tt/arkistointi.svg",
+                "http://kaaviot.finto.fi/tt/asiarekisteri.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t70":[
-                "http://kaaviot.finto.fi/tts/rekisterit.svg"
+                "http://kaaviot.finto.fi/tt/rekisterit.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t119":[
-                "http://kaaviot.finto.fi/tts/tieto-paasyn-ja-kayton-ehtojen-seka-suojauksen-mukaan.svg"
+                "http://kaaviot.finto.fi/tt/tieto-paasyn-ja-kayton-ehtojen-seka-suojauksen-mukaan.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t72":[
-                "http://kaaviot.finto.fi/tts/raakadata-ja-massadata.svg"
+                "http://kaaviot.finto.fi/tt/raakadata-ja-massadata.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t73":[
-                "http://kaaviot.finto.fi/tts/arkistointi.svg"
+                "http://kaaviot.finto.fi/tt/arkistointi.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t20":[
-                "http://kaaviot.finto.fi/tts/tiedon-sailytys-ja-havittaminen.svg"
+                "http://kaaviot.finto.fi/tt/tiedon-sailytys-ja-havittaminen.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t111":[
-                "http://kaaviot.finto.fi/tts/tietoilmioita.svg",
-                "http://kaaviot.finto.fi/tts/tietojohtamisen-valineet.svg"
+                "http://kaaviot.finto.fi/tt/tietoilmioita.svg",
+                "http://kaaviot.finto.fi/tt/tietojohtamisen-valineet.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t118":[
-                "http://kaaviot.finto.fi/tts/luokitus-ja-koodisto.svg"
+                "http://kaaviot.finto.fi/tt/luokitus-ja-koodisto.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t71":[
-                "http://kaaviot.finto.fi/tts/nykytilan-kuvaaminen.svg"
+                "http://kaaviot.finto.fi/tt/nykytilan-kuvaaminen.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t107":[
-                "http://kaaviot.finto.fi/tts/terminologian-kasitteita.svg"
+                "http://kaaviot.finto.fi/tt/terminologian-kasitteita.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t48":[
-                "http://kaaviot.finto.fi/tts/tietoaineistot.svg"
+                "http://kaaviot.finto.fi/tt/tietoaineistot.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t105":[
-                "http://kaaviot.finto.fi/tts/tietoaineistot.svg",
-                "http://kaaviot.finto.fi/tts/tiedon-tyyppeja.svg",
-                "http://kaaviot.finto.fi/tts/sanastot-kayttotarkoituksen-mukaan.svg"
+                "http://kaaviot.finto.fi/tt/tietoaineistot.svg",
+                "http://kaaviot.finto.fi/tt/tiedon-tyyppeja.svg",
+                "http://kaaviot.finto.fi/tt/sanastot-kayttotarkoituksen-mukaan.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t104":[
-                "http://kaaviot.finto.fi/tts/aineeton-paaoma.svg"
+                "http://kaaviot.finto.fi/tt/aineeton-paaoma.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t103":[
-                "http://kaaviot.finto.fi/tts/tietotyo.svg"
+                "http://kaaviot.finto.fi/tt/tietotyo.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t102":[
-                "http://kaaviot.finto.fi/tts/terminologian-kasitteita.svg",
-                "http://kaaviot.finto.fi/tts/sanasto.svg"
+                "http://kaaviot.finto.fi/tt/terminologian-kasitteita.svg",
+                "http://kaaviot.finto.fi/tt/sanasto.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t101":[
-                "http://kaaviot.finto.fi/tts/lukutaidot.svg"
+                "http://kaaviot.finto.fi/tt/lukutaidot.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t100":[
-                "http://kaaviot.finto.fi/tts/avoin-data-ja-omadata.svg"
+                "http://kaaviot.finto.fi/tt/avoin-data-ja-omadata.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t41":[
-                "http://kaaviot.finto.fi/tts/tiedon-tyyppeja.svg",
-                "http://kaaviot.finto.fi/tts/sanastot-kayttotarkoituksen-mukaan.svg",
-                "http://kaaviot.finto.fi/tts/rakenteinen-data.svg",
-                "http://kaaviot.finto.fi/tts/luokitus-ja-koodisto.svg",
-                "http://kaaviot.finto.fi/tts/asiakirjahallinta.svg"
+                "http://kaaviot.finto.fi/tt/tiedon-tyyppeja.svg",
+                "http://kaaviot.finto.fi/tt/sanastot-kayttotarkoituksen-mukaan.svg",
+                "http://kaaviot.finto.fi/tt/rakenteinen-data.svg",
+                "http://kaaviot.finto.fi/tt/luokitus-ja-koodisto.svg",
+                "http://kaaviot.finto.fi/tt/asiakirjahallinta.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t40":[
-                "http://kaaviot.finto.fi/tts/terminologian-kasitteita.svg"
+                "http://kaaviot.finto.fi/tt/terminologian-kasitteita.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t43":[
-                "http://kaaviot.finto.fi/tts/sisalto-kaavio.svg"
+                "http://kaaviot.finto.fi/tt/sisalto-kaavio.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t42":[
-                "http://kaaviot.finto.fi/tts/tieto-paasyn-ja-kayton-ehtojen-seka-suojauksen-mukaan.svg"
+                "http://kaaviot.finto.fi/tt/tieto-paasyn-ja-kayton-ehtojen-seka-suojauksen-mukaan.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t45":[
-                "http://kaaviot.finto.fi/tts/immateriaalioikeus.svg"
+                "http://kaaviot.finto.fi/tt/immateriaalioikeus.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t44":[
-                "http://kaaviot.finto.fi/tts/tietotyo.svg"
+                "http://kaaviot.finto.fi/tt/tietotyo.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t109":[
-                "http://kaaviot.finto.fi/tts/immateriaalioikeus.svg"
+                "http://kaaviot.finto.fi/tt/immateriaalioikeus.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t46":[
-                "http://kaaviot.finto.fi/tts/tieto-paasyn-ja-kayton-ehtojen-seka-suojauksen-mukaan.svg"
+                "http://kaaviot.finto.fi/tt/tieto-paasyn-ja-kayton-ehtojen-seka-suojauksen-mukaan.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t8":[
-                "http://kaaviot.finto.fi/tts/lukutaidot.svg"
+                "http://kaaviot.finto.fi/tt/lukutaidot.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t9":[
-                "http://kaaviot.finto.fi/tts/tietojohtaminen.svg",
-                "http://kaaviot.finto.fi/tts/tietojohtamisen-valineet.svg"
+                "http://kaaviot.finto.fi/tt/tietojohtaminen.svg",
+                "http://kaaviot.finto.fi/tt/tietojohtamisen-valineet.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t1":[
-                "http://kaaviot.finto.fi/tts/tiedonhankinta.svg",
-                "http://kaaviot.finto.fi/tts/lukutaidot.svg"
+                "http://kaaviot.finto.fi/tt/tiedonhankinta.svg",
+                "http://kaaviot.finto.fi/tt/lukutaidot.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t2":[
-                "http://kaaviot.finto.fi/tts/aineeton-paaoma.svg"
+                "http://kaaviot.finto.fi/tt/aineeton-paaoma.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t3":[
-                "http://kaaviot.finto.fi/tts/luokitus-ja-koodisto.svg"
+                "http://kaaviot.finto.fi/tt/luokitus-ja-koodisto.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t4":[
-                "http://kaaviot.finto.fi/tts/tiedon-jalostaminen.svg",
-                "http://kaaviot.finto.fi/tts/sisalto-kaavio.svg",
-                "http://kaaviot.finto.fi/tts/aineeton-paaoma.svg"
+                "http://kaaviot.finto.fi/tt/tiedon-jalostaminen.svg",
+                "http://kaaviot.finto.fi/tt/sisalto-kaavio.svg",
+                "http://kaaviot.finto.fi/tt/aineeton-paaoma.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t5":[
-                "http://kaaviot.finto.fi/tts/tietoilmioita.svg"
+                "http://kaaviot.finto.fi/tt/tietoilmioita.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t6":[
-                "http://kaaviot.finto.fi/tts/raakadata-ja-massadata.svg"
+                "http://kaaviot.finto.fi/tt/raakadata-ja-massadata.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t7":[
-                "http://kaaviot.finto.fi/tts/tiedonhallinta.svg",
-                "http://kaaviot.finto.fi/tts/tiedon-sailytys-ja-havittaminen.svg",
-                "http://kaaviot.finto.fi/tts/asiakirjahallinta.svg",
-                "http://kaaviot.finto.fi/tts/arkistointi.svg",
-                "http://kaaviot.finto.fi/tts/tietoilmioita.svg",
-                "http://kaaviot.finto.fi/tts/tietojohtaminen.svg",
-                "http://kaaviot.finto.fi/tts/tietojohtamisen-valineet.svg"
+                "http://kaaviot.finto.fi/tt/tiedonhallinta.svg",
+                "http://kaaviot.finto.fi/tt/tiedon-sailytys-ja-havittaminen.svg",
+                "http://kaaviot.finto.fi/tt/asiakirjahallinta.svg",
+                "http://kaaviot.finto.fi/tt/arkistointi.svg",
+                "http://kaaviot.finto.fi/tt/tietoilmioita.svg",
+                "http://kaaviot.finto.fi/tt/tietojohtaminen.svg",
+                "http://kaaviot.finto.fi/tt/tietojohtamisen-valineet.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t56":[
-                "http://kaaviot.finto.fi/tts/luokitus-ja-koodisto.svg"
+                "http://kaaviot.finto.fi/tt/luokitus-ja-koodisto.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t57":[
-                "http://kaaviot.finto.fi/tts/nykytilan-kuvaaminen.svg"
+                "http://kaaviot.finto.fi/tt/nykytilan-kuvaaminen.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t54":[
-                "http://kaaviot.finto.fi/tts/tiedon-tyyppeja.svg"
+                "http://kaaviot.finto.fi/tt/tiedon-tyyppeja.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t55":[
-                "http://kaaviot.finto.fi/tts/yhteentoimivuus.svg"
+                "http://kaaviot.finto.fi/tt/yhteentoimivuus.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t52":[
-                "http://kaaviot.finto.fi/tts/terminologian-kasitteita.svg"
+                "http://kaaviot.finto.fi/tt/terminologian-kasitteita.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t53":[
-                "http://kaaviot.finto.fi/tts/rakenteinen-data.svg"
+                "http://kaaviot.finto.fi/tt/rakenteinen-data.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t50":[
-                "http://kaaviot.finto.fi/tts/avoin-data-ja-omadata.svg"
+                "http://kaaviot.finto.fi/tt/avoin-data-ja-omadata.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t51":[
-                "http://kaaviot.finto.fi/tts/tiedonhankinta.svg"
+                "http://kaaviot.finto.fi/tt/tiedonhankinta.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t58":[
-                "http://kaaviot.finto.fi/tts/lukutaidot.svg"
+                "http://kaaviot.finto.fi/tt/lukutaidot.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t59":[
-                "http://kaaviot.finto.fi/tts/terminologian-kasitteita.svg",
-                "http://kaaviot.finto.fi/tts/sanasto.svg"
+                "http://kaaviot.finto.fi/tt/terminologian-kasitteita.svg",
+                "http://kaaviot.finto.fi/tt/sanasto.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t138":[
-                "http://kaaviot.finto.fi/tts/tiedon-jalostaminen.svg",
-                "http://kaaviot.finto.fi/tts/nykytilan-kuvaaminen.svg"
+                "http://kaaviot.finto.fi/tt/tiedon-jalostaminen.svg",
+                "http://kaaviot.finto.fi/tt/nykytilan-kuvaaminen.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t139":[
-                "http://kaaviot.finto.fi/tts/tietojohtamisen-valineet.svg"
+                "http://kaaviot.finto.fi/tt/tietojohtamisen-valineet.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t132":[
-                "http://kaaviot.finto.fi/tts/sanastot-tyypin-ja-laatimistavan-mukaan.svg"
+                "http://kaaviot.finto.fi/tt/sanastot-tyypin-ja-laatimistavan-mukaan.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t133":[
-                "http://kaaviot.finto.fi/tts/luokitus-ja-koodisto.svg"
+                "http://kaaviot.finto.fi/tt/luokitus-ja-koodisto.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t130":[
-                "http://kaaviot.finto.fi/tts/tiedon-muotoja.svg"
+                "http://kaaviot.finto.fi/tt/tiedon-muotoja.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t131":[
-                "http://kaaviot.finto.fi/tts/sanastot-tyypin-ja-laatimistavan-mukaan.svg"
+                "http://kaaviot.finto.fi/tt/sanastot-tyypin-ja-laatimistavan-mukaan.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t136":[
-                "http://kaaviot.finto.fi/tts/tietoturvallisuus.svg"
+                "http://kaaviot.finto.fi/tt/tietoturvallisuus.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t137":[
-                "http://kaaviot.finto.fi/tts/tieto-paasyn-ja-kayton-ehtojen-seka-suojauksen-mukaan.svg"
+                "http://kaaviot.finto.fi/tt/tieto-paasyn-ja-kayton-ehtojen-seka-suojauksen-mukaan.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t134":[
-                "http://kaaviot.finto.fi/tts/tieto-paasyn-ja-kayton-ehtojen-seka-suojauksen-mukaan.svg"
+                "http://kaaviot.finto.fi/tt/tieto-paasyn-ja-kayton-ehtojen-seka-suojauksen-mukaan.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t135":[
-                "http://kaaviot.finto.fi/tts/tiedonhallinta.svg",
-                "http://kaaviot.finto.fi/tts/asiakirjahallinta.svg"
+                "http://kaaviot.finto.fi/tt/tiedonhallinta.svg",
+                "http://kaaviot.finto.fi/tt/asiakirjahallinta.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t23":[
-                "http://kaaviot.finto.fi/tts/tietojohtaminen.svg"
+                "http://kaaviot.finto.fi/tt/tietojohtaminen.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t22":[
-                "http://kaaviot.finto.fi/tts/lukutaidot.svg"
+                "http://kaaviot.finto.fi/tt/lukutaidot.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t21":[
-                "http://kaaviot.finto.fi/tts/rakenteinen-data.svg"
+                "http://kaaviot.finto.fi/tt/rakenteinen-data.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t64":[
-                "http://kaaviot.finto.fi/tts/sanastot-kayttotarkoituksen-mukaan.svg"
+                "http://kaaviot.finto.fi/tt/sanastot-kayttotarkoituksen-mukaan.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t27":[
-                "http://kaaviot.finto.fi/tts/tiedon-jalostaminen.svg"
+                "http://kaaviot.finto.fi/tt/tiedon-jalostaminen.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t26":[
-                "http://kaaviot.finto.fi/tts/asiakirjahallinta.svg",
-                "http://kaaviot.finto.fi/tts/arkistointi.svg"
+                "http://kaaviot.finto.fi/tt/asiakirjahallinta.svg",
+                "http://kaaviot.finto.fi/tt/arkistointi.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t25":[
-                "http://kaaviot.finto.fi/tts/tiedonhallinta.svg"
+                "http://kaaviot.finto.fi/tt/tiedonhallinta.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t24":[
-                "http://kaaviot.finto.fi/tts/tietotyo.svg",
-                "http://kaaviot.finto.fi/tts/asiakirjahallinta.svg"
+                "http://kaaviot.finto.fi/tt/tietotyo.svg",
+                "http://kaaviot.finto.fi/tt/asiakirjahallinta.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t29":[
-                "http://kaaviot.finto.fi/tts/tietojohtaminen.svg"
+                "http://kaaviot.finto.fi/tt/tietojohtaminen.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t28":[
-                "http://kaaviot.finto.fi/tts/tietoturvallisuus.svg",
-                "http://kaaviot.finto.fi/tts/tiedon-sailytys-ja-havittaminen.svg"
+                "http://kaaviot.finto.fi/tt/tietoturvallisuus.svg",
+                "http://kaaviot.finto.fi/tt/tiedon-sailytys-ja-havittaminen.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t129":[
-                "http://kaaviot.finto.fi/tts/asiakirjahallinta.svg"
+                "http://kaaviot.finto.fi/tt/asiakirjahallinta.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t128":[
-                "http://kaaviot.finto.fi/tts/lukutaidot.svg"
+                "http://kaaviot.finto.fi/tt/lukutaidot.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t125":[
-                "http://kaaviot.finto.fi/tts/tiedon-sailytys-ja-havittaminen.svg"
+                "http://kaaviot.finto.fi/tt/tiedon-sailytys-ja-havittaminen.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t124":[
-                "http://kaaviot.finto.fi/tts/immateriaalioikeus.svg"
+                "http://kaaviot.finto.fi/tt/immateriaalioikeus.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t127":[
-                "http://kaaviot.finto.fi/tts/rekisterit.svg"
+                "http://kaaviot.finto.fi/tt/rekisterit.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t126":[
-                "http://kaaviot.finto.fi/tts/rekisterit.svg"
+                "http://kaaviot.finto.fi/tt/rekisterit.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t121":[
-                "http://kaaviot.finto.fi/tts/aineeton-paaoma.svg"
+                "http://kaaviot.finto.fi/tt/aineeton-paaoma.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t120":[
-                "http://kaaviot.finto.fi/tts/tietojohtamisen-valineet.svg"
+                "http://kaaviot.finto.fi/tt/tietojohtamisen-valineet.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t123":[
-                "http://kaaviot.finto.fi/tts/immateriaalioikeus.svg"
+                "http://kaaviot.finto.fi/tt/immateriaalioikeus.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tts:t122":[
-                "http://kaaviot.finto.fi/tts/tieto-paasyn-ja-kayton-ehtojen-seka-suojauksen-mukaan.svg"
+                "http://kaaviot.finto.fi/tt/tieto-paasyn-ja-kayton-ehtojen-seka-suojauksen-mukaan.svg"
             ]
         }
     }
