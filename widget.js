@@ -3,13 +3,19 @@ var TIETO = TIETO || {};
 
 TIETO = {
     widget: {
+        legendVisible: false,
+        legendLabels: { 
+            false: { 'fi': 'Näytä selite', 'sv': 'Visa förklaring', 'en': 'Show legend' }, 
+            true: { 'fi': 'Piilota selite', 'sv': 'Dölj förklaring', 'en': 'Hide legend' }
+        },
         render: function (context) {
             var imgUrls = TIETO.widget.graphsPerUri[context.id];
             if (imgUrls) {
                 var imgUrl = imgUrls[0];
             }
+            var legendLabel = TIETO.widget.legendLabels[TIETO.widget.legendVisible][content_lang];
 
-            $('.concept-info').after(Handlebars.compile($('#tieto-template').html())({'opened': true, 'imgurl': imgUrl, 'images': imgUrls, clang: content_lang}));
+            $('.concept-info').after(Handlebars.compile($('#tieto-template').html())({'opened': true, 'imgurl': imgUrl, 'images': imgUrls, clang: content_lang, legendLabel: legendLabel}));
             $('.panel-body').magnificPopup({
                 delegate: 'a',
                 gallery: {
@@ -29,10 +35,10 @@ TIETO = {
                 createCookie('TIETO_WIDGET_OPEN', 0);
             }
         },
-        legendVisible: false,
         toggleLegend: function() {
             TIETO.widget.legendVisible = !TIETO.widget.legendVisible;
             $('#collapseTieto > .legend').toggle();
+            $('#headingTieto > .legend').text(TIETO.widget.legendLabels[TIETO.widget.legendVisible][content_lang]);
         },
         graphsPerUri: { // SHITZU
             "http://urn.fi/URN:NBN:fi:au:tt:t140":[
