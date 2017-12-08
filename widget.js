@@ -29,7 +29,9 @@ TIETO = {
                 createCookie('TIETO_WIDGET_OPEN', 0);
             }
         },
+        legendVisible: false,
         toggleLegend: function() {
+            TIETO.widget.legendVisible = !TIETO.widget.legendVisible;
             $('#collapseTieto > .legend').toggle();
         },
         graphsPerUri: { // SHITZU
