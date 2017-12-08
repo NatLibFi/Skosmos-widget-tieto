@@ -13,7 +13,7 @@ TIETO = {
             if (imgUrls) {
                 var imgUrl = imgUrls[0];
             }
-            var legendLabel = TIETO.widget.legendLabels[TIETO.widget.legendVisible][content_lang];
+            var legendLabel = TIETO.widget.legendLabels[TIETO.widget.legendVisible][lang];
 
             $('.concept-info').after(Handlebars.compile($('#tieto-template').html())({'opened': true, 'imgurl': imgUrl, 'images': imgUrls, clang: content_lang, legendLabel: legendLabel}));
             $('.panel-body').magnificPopup({
@@ -38,7 +38,7 @@ TIETO = {
         toggleLegend: function() {
             TIETO.widget.legendVisible = !TIETO.widget.legendVisible;
             $('#collapseTieto > .legend').toggle();
-            $('#headingTieto > .legend').text(TIETO.widget.legendLabels[TIETO.widget.legendVisible][content_lang]);
+            $('#headingTieto > .legend').text(TIETO.widget.legendLabels[TIETO.widget.legendVisible][lang]);
         },
         graphsPerUri: { // SHITZU
             "http://urn.fi/URN:NBN:fi:au:tt:t140":[
