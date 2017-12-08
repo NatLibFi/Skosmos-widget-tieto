@@ -5,9 +5,11 @@ TIETO = {
     widget: {
         render: function (context) {
             var imgUrls = TIETO.widget.graphsPerUri[context.id];
-            var imgUrl = imgUrls[0];
+            if (imgUrls) {
+                var imgUrl = imgUrls[0];
+            }
 
-            $('.concept-info').after(Handlebars.compile($('#tieto-template').html())({'opened': true, 'imgurl': imgUrl, 'images': imgUrls}));
+            $('.concept-info').after(Handlebars.compile($('#tieto-template').html())({'opened': true, 'imgurl': imgUrl, 'images': imgUrls, clang: content_lang}));
             $('.panel-body').magnificPopup({
                 delegate: 'a',
                 gallery: {
@@ -26,6 +28,9 @@ TIETO = {
                 $glyph.removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
                 createCookie('TIETO_WIDGET_OPEN', 0);
             }
+        },
+        toggleLegend: function() {
+            $('#collapseTieto > .legend').toggle();
         },
         graphsPerUri: { // SHITZU
             "http://urn.fi/URN:NBN:fi:au:tt:t140":[
@@ -535,6 +540,11 @@ $(function() {
         });
         $('#headingTieto > .versal > .glyphicon').on('click', function() {
             TIETO.widget.flipChevron();
+        });
+
+        $('#headingTieto > .legend').on('click', function() {
+            TIETO.widget.toggleLegend();
+            return false;
         });
     };
 

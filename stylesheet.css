@@ -58,13 +58,16 @@
   opacity: 1;
 }
 
+.panel-heading {
+  height: 40px;
+}
+
 .panel-heading > a.versal {
   float: right;
 }
 
 .panel-heading > .versal > .glyphicon {
   color: #83cfc8;
-  margin-top:5px;
 }
   
 .panel-heading .glyphicon-info-sign {
@@ -72,8 +75,9 @@
   font-size: 18px;
 }
 
-.panel-heading .help {
-  border-bottom: 2px dotted #394554;
+.panel-heading > a.legend {
+  display: inline-block;
+  float:left;
 }
 
 .twitter-typeahead > .clear-search {
@@ -93,4 +97,9 @@
   border-radius: 0;
   border: 0;
   box-shadow: none;
+}
+
+#collapseTieto > .legend {
+ width: 85%; 
+ margin: 10px 0 0 10%;
 }
