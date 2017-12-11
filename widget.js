@@ -74,10 +74,10 @@ TIETO = {
             "http://urn.fi/URN:NBN:fi:au:tt:t37":[
                 "http://kaaviot.finto.fi/tt/tiedon-jalostaminen.svg",
                 "http://kaaviot.finto.fi/tt/aineeton-paaoma.svg",
-                "http://kaaviot.finto.fi/tt/sisalto-kaavio.svg"
+                "http://kaaviot.finto.fi/tt/sisalto.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tt:t38":[
-                "http://kaaviot.finto.fi/tt/sisalto-kaavio.svg",
+                "http://kaaviot.finto.fi/tt/sisalto.svg",
                 "http://kaaviot.finto.fi/tt/lukutaidot.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tt:t39":[
@@ -155,7 +155,7 @@ TIETO = {
                 "http://kaaviot.finto.fi/tt/yhteentoimivuus.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tt:t15":[
-                "http://kaaviot.finto.fi/tt/sisalto-kaavio.svg",
+                "http://kaaviot.finto.fi/tt/sisalto.svg",
                 "http://kaaviot.finto.fi/tt/tiedonhallinta.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tt:t92":[
@@ -341,7 +341,7 @@ TIETO = {
                 "http://kaaviot.finto.fi/tt/terminologian-kasitteita.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tt:t43":[
-                "http://kaaviot.finto.fi/tt/sisalto-kaavio.svg"
+                "http://kaaviot.finto.fi/tt/sisalto.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tt:t42":[
                 "http://kaaviot.finto.fi/tt/tieto-paasyn-ja-kayton-ehtojen-seka-suojauksen-mukaan.svg"
@@ -377,7 +377,7 @@ TIETO = {
             ],
             "http://urn.fi/URN:NBN:fi:au:tt:t4":[
                 "http://kaaviot.finto.fi/tt/tiedon-jalostaminen.svg",
-                "http://kaaviot.finto.fi/tt/sisalto-kaavio.svg",
+                "http://kaaviot.finto.fi/tt/sisalto.svg",
                 "http://kaaviot.finto.fi/tt/aineeton-paaoma.svg"
             ],
             "http://urn.fi/URN:NBN:fi:au:tt:t5":[
