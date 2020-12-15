@@ -17,9 +17,27 @@ TIETO = {
 
             $('.concept-info').after(Handlebars.compile($('#tieto-template').html())({'opened': true, 'imgurl': imgUrl, 'images': imgUrls, clang: content_lang, legendLabel: legendLabel}));
             $('.panel-body').magnificPopup({
-                delegate: 'a',
+                delegate: 'a:not(.slick-cloned)',
                 gallery: {
                     enabled: true
+                },
+                callbacks: {
+                    open: function() {
+                        var mfp = $.magnificPopup.instance;
+                        var proto = $.magnificPopup.proto;
+
+                        // only in case of multiple urls allow changing current slide (the default action)
+                        mfp.next = function() {
+                            if(imgUrls && imgUrls.length > 1) {
+                                proto.next.call(mfp);
+                            }
+                        };
+                        mfp.prev = function() {
+                            if(imgUrls && imgUrls.length > 1) {
+                                proto.prev.call(mfp);
+                            }
+                        };
+                    }
                 },
                 type: 'iframe'
             });
