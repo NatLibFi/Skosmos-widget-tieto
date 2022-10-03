@@ -559,7 +559,6 @@ $(function() {
         });
         $('#headingTieto > .accordion-button').on('click', function() {
             TIETO.widget.toggleLegend();
-            console.log("Täällä ollaan\n");
             if ($(this).hasClass('collapsed')) {
                 createCookie('TIETO_WIDGET_OPEN', 0);
             } else {
