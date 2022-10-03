@@ -1,6 +1,6 @@
 {
-    "js": ["widget.js", "jquery.magnific-popup.min.js", "slick.min.js"],
+    "js": ["widget.js", "slick.min.js"],
     "callback": ["hamis"],
-    "css": ["stylesheet.css","magnific-popup.css", "slick.css", "slick-theme.css"],
+    "css": ["stylesheet.css","slick.css", "slick-theme.css"],
     "templates": ["template.html"]
 }

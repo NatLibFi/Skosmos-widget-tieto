@@ -16,35 +16,6 @@ TIETO = {
             var legendLabel = TIETO.widget.legendLabels[TIETO.widget.legendVisible][lang];
 
             $('#content-bottom').after(Handlebars.compile($('#tieto-template').html())({'opened': true, 'imgurl': imgUrl, 'images': imgUrls, clang: content_lang, legendLabel: legendLabel}));
-            var $tietoButton = $('#headingTieto > .accordion-button');
-            $tietoButton.on('click', function() {
-
-            });
-            $('.panel-body').magnificPopup({
-                delegate: 'a:not(.slick-cloned)',
-                gallery: {
-                    enabled: true
-                },
-                callbacks: {
-                    open: function() {
-                        var mfp = $.magnificPopup.instance;
-                        var proto = $.magnificPopup.proto;
-
-                        // only in case of multiple urls allow changing current slide (the default action)
-                        mfp.next = function() {
-                            if(imgUrls && imgUrls.length > 1) {
-                                proto.next.call(mfp);
-                            }
-                        };
-                        mfp.prev = function() {
-                            if(imgUrls && imgUrls.length > 1) {
-                                proto.prev.call(mfp);
-                            }
-                        };
-                    }
-                },
-                type: 'iframe'
-            });
         },
         toggleLegend: function() {
             TIETO.widget.legendVisible = !TIETO.widget.legendVisible;
@@ -546,7 +517,6 @@ $(function() {
         var id = data.uri;
         var openCookie = readCookie('TIETO_WIDGET_OPEN');
         var isOpen = openCookie !== null ? parseInt(openCookie, 10) : 1;
-        var $tietoButton = $('#headingTieto > .accordion-button');
 
         TIETO.widget.render({id: id, opened: isOpen});
         $('.panel-body').slick({
