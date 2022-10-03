@@ -74,6 +74,11 @@
   font-size: 18px;
 }
 
+#headingTieto > .accordion-button {
+  color: var(--black-color);
+  background-color: var(--white-color);
+}
+
 .panel-heading > a.legend {
   display: inline-block;
   float:left;
