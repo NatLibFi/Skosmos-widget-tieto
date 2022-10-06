@@ -3,7 +3,7 @@ var TIETO = TIETO || {};
 
 TIETO = {
     widget: {
-        legendVisible: false,
+        legendVisible: true,
         legendLabels: { 
             false: { 'fi': 'Näytä selite', 'sv': 'Visa förklaring', 'en': 'Show legend' }, 
             true: { 'fi': 'Piilota selite', 'sv': 'Dölj förklaring', 'en': 'Hide legend' }
@@ -15,48 +15,11 @@ TIETO = {
             }
             var legendLabel = TIETO.widget.legendLabels[TIETO.widget.legendVisible][lang];
 
-            $('.concept-info').after(Handlebars.compile($('#tieto-template').html())({'opened': true, 'imgurl': imgUrl, 'images': imgUrls, clang: content_lang, legendLabel: legendLabel}));
-            $('.panel-body').magnificPopup({
-                delegate: 'a:not(.slick-cloned)',
-                gallery: {
-                    enabled: true
-                },
-                callbacks: {
-                    open: function() {
-                        var mfp = $.magnificPopup.instance;
-                        var proto = $.magnificPopup.proto;
-
-                        // only in case of multiple urls allow changing current slide (the default action)
-                        mfp.next = function() {
-                            if(imgUrls && imgUrls.length > 1) {
-                                proto.next.call(mfp);
-                            }
-                        };
-                        mfp.prev = function() {
-                            if(imgUrls && imgUrls.length > 1) {
-                                proto.prev.call(mfp);
-                            }
-                        };
-                    }
-                },
-                type: 'iframe'
-            });
-        },
-        // Flips the icon displayed on the top right corner of the widget header
-        flipChevron: function() {
-            var $glyph = $('#headingTieto > .versal > .glyphicon');
-            if ($glyph.hasClass('glyphicon-chevron-down')) {
-                $glyph.removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
-                createCookie('TIETO_WIDGET_OPEN', 1);
-            } else {
-                $glyph.removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
-                createCookie('TIETO_WIDGET_OPEN', 0);
-            }
+            $('#content-bottom').after(Handlebars.compile($('#tieto-template').html())({'opened': true, 'imgurl': imgUrl, 'images': imgUrls, clang: content_lang, legendLabel: legendLabel}));
         },
         toggleLegend: function() {
             TIETO.widget.legendVisible = !TIETO.widget.legendVisible;
-            $('#collapseTieto > .legend').toggle();
-            $('#headingTieto > .legend').text(TIETO.widget.legendLabels[TIETO.widget.legendVisible][lang]);
+            $('#headingTieto > button').text(TIETO.widget.legendLabels[TIETO.widget.legendVisible][lang]);
         },
         graphsPerUri: { // SHITZU
             "http://urn.fi/URN:NBN:fi:au:tt:t140":[
@@ -564,13 +527,13 @@ $(function() {
             prevArrow: '<span class="glyphicon glyphicon-chevron-left"></span>',
             nextArrow: '<span class="glyphicon glyphicon-chevron-right"></span>',
         });
-        $('#headingTieto > .versal > .glyphicon').on('click', function() {
-            TIETO.widget.flipChevron();
-        });
-
-        $('#headingTieto > .legend').on('click', function() {
+        $('#headingTieto > .accordion-button').on('click', function() {
             TIETO.widget.toggleLegend();
-            return false;
+            if ($(this).hasClass('collapsed')) {
+                createCookie('TIETO_WIDGET_OPEN', 0);
+            } else {
+                createCookie('TIETO_WIDGET_OPEN', 1);
+            }
         });
     };
 
