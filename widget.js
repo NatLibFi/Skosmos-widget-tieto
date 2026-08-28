@@ -8,13 +8,25 @@ const TIETO = {
         return {
           legendLabel: TIETO.legendLabel('mapCaption'),
           mapVocabulary: window.SKOSMOS.vocShortName,
-          clang: window.SKOSMOS.clang,
+          content_lang: window.SKOSMOS.content_lang,
           opened: TIETO.isOpen,
-          images: TIETO.imgUrls
-          /* imgurl:
-          images:
-          opened': true, 'imgurl': imgUrl, 'images': imgUrls, clang: content_lang, legendLabel: legendLabel})); */
+          images: TIETO.imgUrls,
+          imgurl: TIETO.getImgUrl
         }
+      },
+      computed: {
+        getImgUrl() {
+          const activeItem = document.querySelector('.carousel-item.active')
+          if (activeItem) {
+            const allItems = document.querySelectorAll('.carousel-item')
+            for (let index = 0; index < allItems.length; index++) {
+              if (allItems[index] === activeItem) {
+                console.log(TIETO.imgUrls)
+                return TIETO.imgUrls[index]
+              }
+            }
+          }
+         },
       },
       template: `
                 <div id="tieto-widget" 
@@ -24,10 +36,9 @@ const TIETO = {
                   >
                   <div class="panel panel-default">
                     <div class="panel-heading"
-                      role="tab"
-                      id="headingTieto">
+                      id="heading-tieto">
                       <button
-                        class="accordion-button"
+                        class="accordion-button accordion"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#collapseTieto"
@@ -37,18 +48,17 @@ const TIETO = {
                       </button>
                     </div>
                     <div id="collapseTieto"
-                    class="panel-collapse collapse show"
-                   
+                      class="accordion-collapse collapse show"
                       role="tabpanel"
                       aria-labelledby="headingTietotermit">
-                      <!-- <img class="legend" src="plugins/tieto/svg/tt-selite-{{ clang }}.svg"> -->
-                      <div class="panel-body">
+                      <div class="accordion-body">
+                        <img class="legend" :src="'plugins/tieto/svg/tt-selite-' + content_lang + '.svg'">
                         <div id="tietoImages" class="carousel slide">
-                          <div class="carousel-indicators">
+                          <div id="tieto-carousel"class="carousel-indicators">
                             <button
                               type="button"
                               v-for="(image, index) in images" :key="index" 
-                              id="tietoCarouselButton"
+                              id="tieto-carousel-button"
                               data-bs-target="#tietoImages"
                               :data-bs-slide-to="index"
                               class="btn btn-primary rounded-circle p-0"
@@ -56,7 +66,6 @@ const TIETO = {
                               :aria-current="{ true: index === 0 }"
                               :aria-label="'Image' + index"
                             >
-                              <i class="bi bi-star"></i>
                             </button>
                           </div>
                           <div class="carousel-inner">
@@ -94,9 +103,14 @@ const TIETO = {
                           </button>
                         </div>
                       </div>
+                      <div id="tieto-fullscreen-wrapper">
+                        <a :href="{getImgUrl}" target="_blank">
+                          <i id="tieto-fullscreen" class="fa-solid fa-maximize"></i>
+                        </a>
+                      </div>
                     </div>
                   </div>
-                </div>
+                 </div>
                 `
     })
   },
@@ -105,8 +119,8 @@ const TIETO = {
   /* legendVisible: true, */
   legendLabel: function () {
     legendLabels = {
-      false: { 'fi': 'Näytä selite', 'sv': 'Visa förklaring', 'en': 'Show legend' },
-      true: { 'fi': 'Piilota selite', 'sv': 'Dölj förklaring', 'en': 'Hide legend' }
+      false: { 'fi': 'Näytä kaavio', 'sv': 'Visa diagram', 'en': 'Show diagram' },
+      true: { 'fi': 'Piilota kaavio', 'sv': 'Dölj diagram', 'en': 'Hide diagram' }
     }
     return legendLabels[TIETO.isOpen][window.SKOSMOS.lang]
   },
@@ -641,7 +655,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var isOpen = openCookie !== null ? parseInt(openCookie, 10) : 1; */
     TIETO.imgUrls = TIETO.graphsPerUri[id];
     if (TIETO.imgUrls) {
-      var imgUrl = TIETO.imgUrls[0]
+      let imgUrl = TIETO.imgUrls[0]
     }
     TIETO.render()
   }
