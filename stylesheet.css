@@ -15,10 +15,6 @@
   display: none;
 }
 
-#tieto-widget > a:first-child {
-  display: inline;
-}
-
 #heading-tieto {
   font-size: 16px;
   border-bottom: 1px solid var(--secondary-medium-color);
@@ -36,11 +32,6 @@
   margin-top: .2rem;
 }
 
-.panel-heading > a.legend {
-  display: inline-block;
-  float: left;
-}
-
 #tieto-widget > .panel {
   border-radius: 0;
   border: 0;
@@ -54,6 +45,7 @@
 #collapseTieto > .accordion-body > .legend {
   width: 80%; 
   margin-left: 10%;
+  padding-bottom: 0.5rem;
 }
 
 #collapseTieto > .panel-body {
@@ -94,9 +86,4 @@
   background-color: var(--white-color);
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}
-
-#tieto-fullscreen {
-  margin-right: 5%;
-  cursor: pointer;
 }

@@ -10,23 +10,8 @@ const TIETO = {
           mapVocabulary: window.SKOSMOS.vocShortName,
           content_lang: window.SKOSMOS.content_lang,
           opened: TIETO.isOpen,
-          images: TIETO.imgUrls,
-          imgurl: TIETO.getImgUrl
+          images: TIETO.imgUrls
         }
-      },
-      computed: {
-        getImgUrl() {
-          const activeItem = document.querySelector('.carousel-item.active')
-          if (activeItem) {
-            const allItems = document.querySelectorAll('.carousel-item')
-            for (let index = 0; index < allItems.length; index++) {
-              if (allItems[index] === activeItem) {
-                console.log(TIETO.imgUrls)
-                return TIETO.imgUrls[index]
-              }
-            }
-          }
-         },
       },
       template: `
                 <div id="tieto-widget" 
@@ -42,32 +27,20 @@ const TIETO = {
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#collapseTieto"
-                        aria-expanded="true"
-                        aria-controls="collapseTieto">
+                        :aria-expanded="opened ? 'true' : 'false'"
+                        aria-controls="collapseTieto"
+                        v-on:click="saveAccordionState"
+                      >
                         {{legendLabel}}
                       </button>
                     </div>
                     <div id="collapseTieto"
-                      class="accordion-collapse collapse show"
+                      class="accordion-collapse collapse"
+                      :class="{ show: opened }"
                       role="tabpanel"
                       aria-labelledby="headingTietotermit">
                       <div class="accordion-body">
-                        <img class="legend" :src="'plugins/tieto/svg/tt-selite-' + content_lang + '.svg'">
                         <div id="tietoImages" class="carousel slide">
-                          <div id="tieto-carousel"class="carousel-indicators">
-                            <button
-                              type="button"
-                              v-for="(image, index) in images" :key="index" 
-                              id="tieto-carousel-button"
-                              data-bs-target="#tietoImages"
-                              :data-bs-slide-to="index"
-                              class="btn btn-primary rounded-circle p-0"
-                              :class="{ active: index === 0 }"
-                              :aria-current="{ true: index === 0 }"
-                              :aria-label="'Image' + index"
-                            >
-                            </button>
-                          </div>
                           <div class="carousel-inner">
                             <div
                               v-for="(image, index) in images"
@@ -75,15 +48,16 @@ const TIETO = {
                               class="carousel-item"
                               :class="{ active: index === 0 }"
                             >
-                              <img
-                                :src="image"
-                                class="d-block w-100"
-                                :alt=""
-                              >
+                              <a :href="image" target="_blank">
+                                <img
+                                  :src="image"
+                                  class="d-block w-100"
+                                  :alt=""
+                                >
+                              </a>
                             </div>
                           </div>
-                          <button class="carousel-control-prev"
-                            class="btn btn-light border-2 rounded-1"
+                          <button class="carousel-control-prev btn btn-light border-2 rounded-1"
                             type="button"
                             data-bs-target="#tietoImages"
                             data-bs-slide="prev"
@@ -92,8 +66,7 @@ const TIETO = {
                             <span class="visually-hidden">Previous</span>
                           </button>
                           <button
-                            class="carousel-control-next"
-                            class="btn btn-light border-2 rounded-1"
+                            class="carousel-control-next btn btn-light border-2 rounded-1"
                             type="button"
                             data-bs-target="#tietoImages"
                             data-bs-slide="next"
@@ -101,26 +74,41 @@ const TIETO = {
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                           </button>
+                        <div id="tieto-carousel"class="carousel-indicators">
+                          <button
+                            type="button"
+                            v-for="(image, index) in images" :key="index"
+                            id="tieto-carousel-button"
+                            data-bs-target="#tietoImages"
+                            :data-bs-slide-to="index"
+                            class="btn btn-primary rounded-circle p-0"
+                            :class="{ active: index === 0 }"
+                            :aria-current="{ true: index === 0 }"
+                            :aria-label="'Image' + index"
+                          >
+                          </button>
                         </div>
-                      </div>
-                      <div id="tieto-fullscreen-wrapper">
-                        <a :href="{getImgUrl}" target="_blank">
-                          <i id="tieto-fullscreen" class="fa-solid fa-maximize"></i>
-                        </a>
+                        </div>
+                        <img class="legend" :src="'plugins/tieto/svg/tt-selite-' + content_lang + '.svg'">
                       </div>
                     </div>
                   </div>
                  </div>
-                `
+                `,
+      methods: {
+        saveAccordionState () {
+          TIETO.isOpen = !TIETO.isOpen
+          TIETO.saveCookie()
+        }
+      }
     })
   },
   imgUrls: [],
   isOpen: true,
-  /* legendVisible: true, */
   legendLabel: function () {
-    legendLabels = {
-      false: { 'fi': 'Näytä kaavio', 'sv': 'Visa diagram', 'en': 'Show diagram' },
-      true: { 'fi': 'Piilota kaavio', 'sv': 'Dölj diagram', 'en': 'Hide diagram' }
+    const legendLabels = {
+      false: { fi: 'Näytä kaavio', sv: 'Visa diagram', en: 'Show diagram' },
+      true: { fi: 'Piilota kaavio', sv: 'Dölj diagram', en: 'Hide diagram' }
     }
     return legendLabels[TIETO.isOpen][window.SKOSMOS.lang]
   },
@@ -139,7 +127,7 @@ const TIETO = {
         return decodeURIComponent(value)
       }
     }
-    return 1
+    return true
   },
   appendMountPoint: function () {
     const mountPoint = document.getElementById('tieto-plugin')
@@ -639,10 +627,9 @@ const TIETO = {
       "//kaaviot.finto.fi/tt/tieto-paasyn-ja-kayton-ehtojen-seka-suojauksen-mukaan.svg"
     ]
   }
-};
+}
 
 document.addEventListener('DOMContentLoaded', function () {
-
   window.tietoWidget = function (data) {
     // Only activating the widget when on a concept page and there is a prefLabel.
     if (data.pageType !== 'concept' || data.prefLabels === undefined) {
@@ -650,13 +637,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     TIETO.appendMountPoint()
     // reading the id from the uri
-    const id = data.uri;
-    /* var openCookie = readCookie('TIETO_WIDGET_OPEN');
-    var isOpen = openCookie !== null ? parseInt(openCookie, 10) : 1; */
-    TIETO.imgUrls = TIETO.graphsPerUri[id];
-    if (TIETO.imgUrls) {
-      let imgUrl = TIETO.imgUrls[0]
-    }
+    const id = data.uri
+    TIETO.isOpen = TIETO.readCookie('TIETO_WIDGET_OPEN')
+    TIETO.imgUrls = TIETO.graphsPerUri[id]
     TIETO.render()
   }
 })
