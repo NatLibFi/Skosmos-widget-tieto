@@ -6,10 +6,9 @@ const TIETO = {
     return Vue.createApp({
       data () {
         return {
-          legendLabel: TIETO.legendLabel('mapCaption'),
+          opened: true,
           mapVocabulary: window.SKOSMOS.vocShortName,
           content_lang: window.SKOSMOS.content_lang,
-          opened: TIETO.isOpen,
           images: TIETO.imgUrls
         }
       },
@@ -27,16 +26,15 @@ const TIETO = {
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#collapseTieto"
-                        :aria-expanded="opened ? 'true' : 'false'"
+                        aria-expanded="true"
                         aria-controls="collapseTieto"
-                        v-on:click="saveAccordionState"
+                        @click="toggle"
                       >
-                        {{legendLabel}}
+                        {{ legendLabel }}
                       </button>
                     </div>
                     <div id="collapseTieto"
-                      class="accordion-collapse collapse"
-                      :class="{ show: opened }"
+                      class="accordion-collapse collapse show"
                       role="tabpanel"
                       aria-labelledby="headingTietotermit">
                       <div class="accordion-body">
@@ -95,39 +93,25 @@ const TIETO = {
                   </div>
                  </div>
                 `,
+      computed: {
+        legendLabel () {
+          return TIETO.legendLabel(this.opened)
+        }
+      },
       methods: {
-        saveAccordionState () {
-          TIETO.isOpen = !TIETO.isOpen
-          TIETO.saveCookie()
+        toggle () {
+          this.opened = !this.opened
         }
       }
     })
   },
   imgUrls: [],
-  isOpen: true,
-  legendLabel: function () {
+  legendLabel: function (open) {
     const legendLabels = {
       false: { fi: 'Näytä kaavio', sv: 'Visa diagram', en: 'Show diagram' },
       true: { fi: 'Piilota kaavio', sv: 'Dölj diagram', en: 'Hide diagram' }
     }
-    return legendLabels[TIETO.isOpen][window.SKOSMOS.lang]
-  },
-  saveCookie: function () {
-    const cookiePath = '/'
-    const date = new Date()
-    date.setTime(date.getTime() + 365 * 24 * 60 * 60 * 1000) // 365 days from now
-    document.cookie = 'TIETO_WIDGET_OPEN=' + this.isOpen + '; expires=' + date.toGMTString() + '; path=' + cookiePath + '; SameSite=Lax'
-  },
-  readCookie: function () {
-    const cookies = document.cookie.split('; ')
-    for (let i = 0; i < cookies.length; i++) {
-      const cookie = cookies[i]
-      const [key, value] = cookie.split('=')
-      if (key === 'TIETO_WIDGET_OPEN') {
-        return decodeURIComponent(value)
-      }
-    }
-    return true
+    return legendLabels[open][window.SKOSMOS.lang]
   },
   appendMountPoint: function () {
     const mountPoint = document.getElementById('tieto-plugin')
@@ -629,6 +613,8 @@ const TIETO = {
   }
 }
 
+TIETO.state = Vue.reactive({ isOpen: true })
+
 document.addEventListener('DOMContentLoaded', function () {
   window.tietoWidget = function (data) {
     // Only activating the widget when on a concept page and there is a prefLabel.
@@ -638,7 +624,6 @@ document.addEventListener('DOMContentLoaded', function () {
     TIETO.appendMountPoint()
     // reading the id from the uri
     const id = data.uri
-    TIETO.isOpen = TIETO.readCookie('TIETO_WIDGET_OPEN')
     TIETO.imgUrls = TIETO.graphsPerUri[id]
     TIETO.render()
   }
