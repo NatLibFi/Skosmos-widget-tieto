@@ -1,6 +1,5 @@
 {
-    "js": ["widget.js", "slick.min.js"],
-    "callback": ["hamis"],
-    "css": ["stylesheet.css","slick.css", "slick-theme.css"],
-    "templates": ["template.html"]
+    "js": ["widget.js"],
+    "callback": ["tietoWidget"],
+    "css": ["stylesheet.css"]
 }
