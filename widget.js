@@ -6,7 +6,7 @@ const TIETO = {
     return Vue.createApp({
       data () {
         return {
-          opened: true,
+          diagramLabel: TIETO.diagramLabel,
           mapVocabulary: window.SKOSMOS.vocShortName,
           content_lang: window.SKOSMOS.content_lang,
           images: TIETO.imgUrls
@@ -21,22 +21,24 @@ const TIETO = {
                   <div class="panel panel-default">
                     <div class="panel-heading"
                       id="heading-tieto">
-                      <button
-                        class="accordion-button accordion"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseTieto"
-                        aria-expanded="true"
-                        aria-controls="collapseTieto"
-                        @click="toggle"
-                      >
-                        {{ legendLabel }}
-                      </button>
+                      <h3>
+                        <button
+                          class="accordion-button accordion"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseTieto"
+                          aria-expanded="true"
+                          aria-controls="collapseTieto"
+                          @click="toggle"
+                        >
+                          {{ diagramLabel () }}
+                        </button>
+                      </h3>
                     </div>
                     <div id="collapseTieto"
                       class="accordion-collapse collapse show"
                       role="tabpanel"
-                      aria-labelledby="headingTietotermit">
+                      aria-labelledby="heading-tieto">
                       <div class="accordion-body">
                         <div id="tietoImages" class="carousel slide">
                           <div class="carousel-inner">
@@ -50,7 +52,7 @@ const TIETO = {
                                 <img
                                   :src="image"
                                   class="d-block w-100"
-                                  :alt=""
+                                  alt=""
                                 >
                               </a>
                             </div>
@@ -61,7 +63,7 @@ const TIETO = {
                             data-bs-slide="prev"
                           >
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
+                            <span class="visually-hidden">{{ buttonLabel ("previous") }}</span>
                           </button>
                           <button
                             class="carousel-control-next btn btn-light border-2 rounded-1"
@@ -70,7 +72,7 @@ const TIETO = {
                             data-bs-slide="next"
                           >
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
+                            <span class="visually-hidden">{{ buttonLabel ("next") }}</span>
                           </button>
                         <div id="tieto-carousel"class="carousel-indicators">
                           <button
@@ -87,31 +89,32 @@ const TIETO = {
                           </button>
                         </div>
                         </div>
-                        <img class="legend" :src="'plugins/tieto/svg/tt-selite-' + content_lang + '.svg'">
+                        <img alt="" id="tietolegend" :src="'plugins/tieto/svg/tt-selite-' + content_lang + '.svg'">
                       </div>
                     </div>
                   </div>
                  </div>
                 `,
-      computed: {
-        legendLabel () {
-          return TIETO.legendLabel(this.opened)
-        }
-      },
       methods: {
-        toggle () {
-          this.opened = !this.opened
+        buttonLabel (direction) {
+          return TIETO.buttonLabel(direction)
         }
       }
     })
   },
   imgUrls: [],
-  legendLabel: function (open) {
-    const legendLabels = {
-      false: { fi: 'Näytä kaavio', sv: 'Visa diagram', en: 'Show diagram' },
-      true: { fi: 'Piilota kaavio', sv: 'Dölj diagram', en: 'Hide diagram' }
+  diagramLabel: function () {
+    const diagramLabels = {
+      fi: 'Kaavio', sv: 'Diagram', en: 'Diagram'
     }
-    return legendLabels[open][window.SKOSMOS.lang]
+    return diagramLabels[window.SKOSMOS.lang]
+  },
+  buttonLabel: function (direction) {
+    const buttonLabels = {
+      previous: { fi: 'Edellinen', sv: 'Tidigare', en: 'Previous' },
+      next: { fi: 'Seuraava', sv: 'Nästa', en: 'Next' }
+    }
+    return buttonLabels[direction][window.SKOSMOS.lang]
   },
   appendMountPoint: function () {
     const mountPoint = document.getElementById('tieto-plugin')
@@ -612,8 +615,6 @@ const TIETO = {
     ]
   }
 }
-
-TIETO.state = Vue.reactive({ isOpen: true })
 
 document.addEventListener('DOMContentLoaded', function () {
   window.tietoWidget = function (data) {
