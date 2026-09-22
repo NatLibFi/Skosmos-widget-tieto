@@ -111,7 +111,7 @@ const TIETO = {
   },
   buttonLabel: function (direction) {
     const buttonLabels = {
-      previous: { fi: 'Edellinen', sv: 'Tidigare', en: 'Previous' },
+      previous: { fi: 'Edellinen', sv: 'Föregående', en: 'Previous' },
       next: { fi: 'Seuraava', sv: 'Nästa', en: 'Next' }
     }
     return buttonLabels[direction][window.SKOSMOS.lang]
