@@ -1,103 +1,37 @@
 /*
  * The whole widget
  */
-.concept-widget {
-  border-top: 2px solid #394554;
-  background-color: #fff;
+#tieto-widget {
+  margin-top: .2rem;
+  background-color: var(--white-color);
 }
 
-.concept-widget a > img {
+#tieto-widget a > img {
   height: auto;
   width: 99%;
 }
 
-.concept-widget > a {
+#tieto-widget > a {
   display: none;
 }
 
-.concept-widget .glyphicon-chevron-left, .concept-widget .glyphicon-chevron-right {
-  color: #83cfc8;
-  cursor: pointer;
-  font-size: 24px;
-  height: 24px;
-  position: absolute;
-  top: 50%;
-  transform: translate(0px, -50%);
+#heading-tieto {
+  font-size: 16px;
 }
 
-.concept-widget .glyphicon-chevron-left {
-  left: 2px;
-  z-index: 1041;
-}
-
-.concept-widget .glyphicon-chevron-right {
-  right: 2px;
-}
-
-.concept-widget > a:first-child {
-  display: inline;
-}
-
-.concept-widget .slick-dots {
-  bottom: 2px;
-}
-
-.concept-widget .slick-dots > li {
-  margin: 0 2px;
-}
-
-.concept-widget .slick-dots > li > button::before {
-  color: #83cfc8;
-  font-size: 20px;
-  opacity: 0.5;
-}
-
-.concept-widget .slick-dots > li.slick-active > button::before  {
-  color: #83cfc8;
-  opacity: 1;
-}
-
-.panel-heading {
-  height: 40px;
-}
-
-.panel-heading > a.versal {
-  float: right;
-}
-
-.panel-heading > .versal > .glyphicon {
-  color: #83cfc8;
-}
-  
-.panel-heading .glyphicon-info-sign {
-  color: #83cfc8;
-  font-size: 18px;
-}
-
-#headingTieto > .accordion-button {
-  color: var(--black-color);
+#heading-tieto .accordion-button {
   background-color: var(--white-color);
+  padding-top: 0.5rem;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: var(--dark-color);
+  margin-top: .2rem;
 }
 
-.panel-heading > a.legend {
-  display: inline-block;
-  float:left;
-}
-
-.twitter-typeahead > .clear-search {
-    z-index: 1040;
-}
-
-.mfp-iframe-holder .mfp-content {
-  max-height: 99% !important;
-  max-width: 99% !important;
-}
-
-.mfp-content > .mfp-figure::after, .mfp-iframe-scaler > .mfp-iframe {
-  background: #fff none repeat scroll 0 0;
-}
-
-.concept-widget > .panel {
+#tieto-widget > .panel {
   border-radius: 0;
   border: 0;
   box-shadow: none;
@@ -107,12 +41,49 @@
   margin-top: 10px;
 }
 
-#collapseTieto > .legend {
+#tietolegend {
   width: 80%; 
   margin-left: 10%;
-  display: none;
+  padding-bottom: 0.5rem;
+  padding-bottom: 1.5rem;
 }
 
 #collapseTieto > .panel-body {
   padding-top: 0; 
+}
+
+#tietoImages > .carousel-control-prev {
+  background-color: var(--dark-color);
+  width: 30px;
+  height: 30px;
+  margin-left: 1%;
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+}
+
+#tietoImages > .carousel-control-next {
+  background-color: var(--dark-color);
+  width: 30px;
+  height: 30px;
+  margin-right: 1%;
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+}
+
+#tieto-carousel-button {
+  background-color: var(--dark-color);
+  justify-content: center;
+  z-index: 1000;
+  width: 1rem;
+  height: 1rem;
+}
+
+#tieto-carousel {
+  position: static;
+  align-items: center;
+  background-color: var(--white-color);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
