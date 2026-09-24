@@ -21,7 +21,7 @@ const TIETO = {
                   <div class="panel panel-default">
                     <div class="panel-heading"
                       id="heading-tieto">
-                      <h3>
+                      <h2>
                         <button
                           class="accordion-button accordion"
                           type="button"
@@ -33,7 +33,7 @@ const TIETO = {
                         >
                           {{ diagramLabel () }}
                         </button>
-                      </h3>
+                      </h2>
                     </div>
                     <div id="collapseTieto"
                       class="accordion-collapse collapse show"
