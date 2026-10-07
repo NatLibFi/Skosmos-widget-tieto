@@ -21,7 +21,7 @@ const TIETO = {
                   <div class="panel panel-default">
                     <div class="panel-heading"
                       id="heading-tieto">
-                      <h2>
+                      <h2 class="mb-0">
                         <button
                           class="accordion-button accordion"
                           type="button"

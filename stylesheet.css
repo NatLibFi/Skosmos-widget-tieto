@@ -2,7 +2,7 @@
  * The whole widget
  */
 #tieto-widget {
-  margin-top: .2rem;
+  margin-top: 1rem;
   background-color: var(--white-color);
 }
 
@@ -22,9 +22,9 @@
 #heading-tieto .accordion-button {
   background-color: var(--white-color);
   padding-top: 0.5rem;
-  padding-right: 1rem;
+  padding-right: 1.9rem;
   padding-bottom: 0.5rem;
-  padding-left: 1rem;
+  padding-left: 1.9rem;
   font-weight: bold;
   font-size: 1.2rem;
   font-family: var(--font-family);
