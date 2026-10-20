@@ -105,14 +105,14 @@ const TIETO = {
   imgUrls: [],
   diagramLabel: function () {
     const diagramLabels = {
-      fi: 'Kaavio', sv: 'Diagram', en: 'Diagram'
+      fi: 'Kaavio', sv: 'Diagram', en: 'Diagram', se: 'Govus'
     }
     return diagramLabels[window.SKOSMOS.lang]
   },
   buttonLabel: function (direction) {
     const buttonLabels = {
-      previous: { fi: 'Edellinen', sv: 'Föregående', en: 'Previous' },
-      next: { fi: 'Seuraava', sv: 'Nästa', en: 'Next' }
+      previous: { fi: 'Edellinen', sv: 'Föregående', en: 'Previous', se: 'Ovddit' },
+      next: { fi: 'Seuraava', sv: 'Nästa', en: 'Next', se: 'Čuovvovaš' }
     }
     return buttonLabels[direction][window.SKOSMOS.lang]
   },
